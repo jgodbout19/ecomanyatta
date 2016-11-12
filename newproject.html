@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,18 @@
     <title>Eco Manyatta | Add New Project</title>
 
     <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css\simple-sidebar.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css\simple-sidebar.css">
 </head>
 
 <body>
 
-<div id="wrapper">
+    <div id="wrapper">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
@@ -60,12 +61,116 @@
                     <div class="col-lg-12">
                         <div class="container-fluid">
 
-							<h1>Add New Project</h1><br>
+                            <h1>Add New Project</h1><br>
 
-							<div class="row">
-								
-							</div>
-						</div>
+                            <div class="row">
+
+                                <!-- new project form -->
+
+                                <!--  ----------------------------------------------------------------------  -->
+                                <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+                                <!--  If necessary, please modify the charset parameter to specify the        -->
+                                <!--  character set of your HTML page.                                        -->
+                                <!--  ----------------------------------------------------------------------  -->
+
+                                <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+                                <!--  ----------------------------------------------------------------------  -->
+                                <!--  NOTE: Please add the following <FORM> element to your page.             -->
+                                <!--  ----------------------------------------------------------------------  -->
+
+                                <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+                                    <input type=hidden name="oid" value="00D15000000NRAX">
+                                    <input type=hidden name="retURL" value="http://placeholder.com">
+
+                                    <!--  ----------------------------------------------------------------------  -->
+                                    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                                    <!--  these lines if you wish to test in debug mode.                          -->
+                                    <!--  <input type="hidden" name="debug" value=1>                              -->
+                                    <!--  <input type="hidden" name="debugEmail"                                  -->
+                                    <!--  value="hillegassdev@gmail.com">                                         -->
+                                    <!--  ----------------------------------------------------------------------  -->
+
+                                    <label for="first_name" class="col-sm-2 col-form-label">First Name</label>
+                                    <input id="first_name" class="form-control" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+                                    <label for="last_name" class="col-sm-2 col-form-label">Last Name</label>
+                                    <input id="last_name" class="form-control" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+                                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                                    <input id="email" class="form-control" maxlength="80" name="email" size="20" type="text" /><br>
+
+                                    <label for="company" class="col-sm-2 col-form-label">Company</label>
+                                    <input id="company" class="form-control" maxlength="40" name="company" size="20" type="text" /><br>
+
+                                    <label class="col-sm-2 col-form-label">Mobile Number:</label>
+                                    <input id="00N1500000II3cI" class="form-control" maxlength="40" name="00N1500000II3cI" onkeydown="formatPhoneOnEnter(this, event);"size="20" type="text" /><br>
+
+                                    <label class="col-sm-2 col-form-label">Email:</label>
+                                    <input id="00N1500000II3cS" class="form-control" maxlength="80" name="00N1500000II3cS" size="20" type="text" /><br>
+
+                                    <label class="col-sm-2 col-form-label">Location (Google API) (Latitude):</label>
+                                    <input id="0BC15000000Cg3j" class="form-control" name="0BC15000000Cg3j" size="20" type="text" /><br>
+
+                                    <label class="col-sm-2 col-form-label">Location (Google API) (Longitude):</label>
+                                    <input id="0BC15000000Cg3k" class="form-control" name="0BC15000000Cg3k" size="20" type="text" /><br>
+
+                                    <label class="col-sm-2 col-form-label">Size of plot:</label>
+                                    <input id="00N1500000II3cm" class="form-control" name="00N1500000II3cm" size="20" type="text" /><br>
+
+                                    <label class="col-sm-2 col-form-label">Number of homes on plot:</label>
+                                    <input id="00N1500000II3cw" class="form-control" name="00N1500000II3cw" size="20" type="text"/><br>
+
+                                    <label class="col-sm-2 col-form-label">Land Registry Number:</labe>
+                                    <input id="00N1500000II3d1" class="form-control" name="00N1500000II3d1" size="20" type="text" /><br>
+
+                                    <label>Water Access?:</label>
+                                    <select id="00N1500000II3d6" class="form-control"
+                                        name="00N1500000II3d6" title="Water Access?"><option value="">--None--</option><option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="In Progress">In Progress</option>
+                                    </select><br>
+
+                                    <labe class="col-sm-2 col-form-label">Electricity Access?:</label>
+                                    <select id="00N1500000II3dB" name="00N1500000II3dB" class="form-control" title="Electricity Access?"><option value="">--None--</option><option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="In Progress">In Progress</option>
+                                    </select><br>
+
+                                    <label class="col-sm-2 col-form-label">Type of Cooking Stove:</label>
+                                        <select id="00N1500000II3dG" name="00N1500000II3dG" class="form-control" title="Type of Cooking Stove"><option value="">--None--</option><option value="Stove 1">Stove 1</option>
+                                    <option value="Stove 2">Stove 2</option>
+                                    </select><br>
+
+                                    <label class="col-sm-2 col-form-label">Number of People living on Homestead:</label>
+                                    <input id="00N1500000II3dL" class="form-control" name="00N1500000II3dL" size="20" type="text" /><br>
+
+                                    <label class="col-sm-2 col-form-label">Number of Children:</label>
+                                    <input id="00N1500000II3dQ" class="form-control" name="00N1500000II3dQ" size="20" type="text" /><br>
+
+                                    <label class="col-sm-2 col-form-label">Loan or Self Funded?:</label>
+                                    <select
+                                        id="00N1500000II3dV" name="00N1500000II3dV" class="form-control"title="Loan or Self Funded?">
+                                        <option value="">--None--</option>
+                                        <option value="Loan">Loan</option>
+                                        <option value="Self Funded">Self Funded</option>
+                                        </select><br>
+
+                                        <label class="col-sm-2 col-form-label">Desired Start Date:</label>
+                                        <span class="dateInput dateOnlyInput">
+
+                                            <input  id="00N1500000II3da" class="form-control" name="00N1500000II3da" size="12" type="text" /></span><br>
+
+                                        <input type="submit" class="btn btn-success" name="submit">
+
+                                </form>
+
+
+                                <!-- new project form -->
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,4 +181,5 @@
     <!-- /#wrapper -->
 
 </body>
+
 </html>
