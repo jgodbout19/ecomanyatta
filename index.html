@@ -1,41 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" href="/css/main.css" media="screen" title="no title">
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<link rel="stylesheet" href="/css/normalize.css" media="screen" title="no title">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eco Manyatta | Projects</title>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- DataTable dependencies -->
+	<script
+		  src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css\simple-sidebar.css">
+	<link rel="stylesheet" href="css\custom.css">
+
+	<!-- Custom JS -->
+	<script type="text/javascript" src="js/initializeDataTable.js" async></script>
 </head>
+
 <body>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
-<form class="pure-form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-<input type=hidden name="oid" value="00D15000000NRAX">
-<input type=hidden name="retURL" value="http://www.google.com">
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="hillegassdev@gmail.com">                                         -->
-<!--  ----------------------------------------------------------------------  -->
-<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
-<label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
-<input type="submit" name="submit">
-</form>
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <strong>Eco Manyatta</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="newproject.html">New Project</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="container-fluid">
+
+							<h1>Projects</h1><br>
+
+							<div class="row">
+								<table id="project-table" class="table table-hover table-bordered">
+									<thead>
+										<tr>
+										    <th>#</th>
+										    <th>Owner</th>
+										    <th>Status</th>
+										    <th>Assignee</th>
+									        <th></th>
+									    </tr>
+									</thead>
+									<tbody>
+										<tr class="table-striped">
+										    <td>1</td>
+										    <td>John Doe</td>
+										    <td>Step 2</td>
+										    <td>Staff Member 1</td>
+										    <td><button type="button" class="btn btn-success">View</button></td>
+										</tr>
+
+										<tr>
+										    <td>2</td>
+										    <td>Fred Fagan</td>
+										    <td>Step 4</td>
+										    <td>Staff Member 2</td>
+										    <td><button type="button" class="btn btn-success">View</button></td>
+										</tr>
+
+										<tr class="table-striped">
+										   	<td>3</td>
+										  	<td>Mike Katz</td>
+											<td>Step 1</td>
+										  	<td>Staff Member 3</td>
+										  	<td><button type="button" class="btn btn-success">View</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
 
 </body>
-<script src="https://use.fontawesome.com/4af4cde5b2.js"></script>
 </html>
