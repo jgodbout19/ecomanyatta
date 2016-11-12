@@ -51,3 +51,8 @@
     background-color: #8AAA79 !important;
     border-color: #8AAA79 !important;
 }
+
+.paginate_button, .active {
+    background-color: #8AAA79 !important;
+    border-color: #8AAA79 !important;
+}
