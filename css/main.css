@@ -1,0 +1,97 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+.container {
+	min-width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.col {
+	flex: 1;
+	margin: .6em;
+	padding: .6em;
+}
+
+.responsive-img {
+	max-width: 100%;
+}
+
+/* media query */
+
+@media screen and (min-width: 650px) {
+ /* min-width can be changed to whatever you want. */
+	.row {
+								/* doesn't have to be exactly 650px */
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+	content: " ";
+ /* 1 */
+	display: table;
+ /* 2 */;
+}
+
+.cf:after {
+	clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+	*zoom: 1;
+}
+
+/* media query */
+
+@media screen and (min-width: 650px) {
+	.row {
+		display: flex;
+		flex-direction: row;
+	};
+}
+
+/* custom css */
+
+* {
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #FFFFFF;
+}
