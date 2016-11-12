@@ -30,7 +30,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #428bca;
+    background: #8AAA79;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -71,7 +71,7 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 .sidebar-nav li a:hover {
